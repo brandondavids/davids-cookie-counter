@@ -5,10 +5,11 @@ sessionTest: **[hilang]** session cookie (tanpa Max-Age)
 persistentTest: **[ada]** Max-Age = 3600 (1 jam)
 
 ## EKSPERIMEN 2: Path Restriction
-**Halaman**				        **cookieRoot**	**cookieAdmin**
-/index.html				            ✓	✗
-/admin/index.html			        ✓	✓
-/admin/dashboard/index.html		    ✓	✓
+| Halaman | cookieRoot | cookieAdmin |
+| ------- | ---------- | ----------- |
+| /index.html | ✓ |	✗ | 
+| /admin/index.html | ✓ | ✓ |
+| /admin/dashboard/index.html | ✓ | ✓ |
 
 Cookie dengan Path=/admin akan dikirim ke:
 - /admin ✓
@@ -17,10 +18,11 @@ Cookie dengan Path=/admin akan dikirim ke:
 - / ✗
 
 ## EKSPERIMEN 3: Secure Flag
-**URL**	                                **Secure Cookie**
-http://localhost / http://127.0.0.1	✅ Bisa (exception)
-http://example.com (production)	    ❌ Ditolak
-https://example.com	                ✅ Bisa
+| URL | Secure Cookie |
+| --- | ------------- |
+| http://localhost / http://127.0.0.1 | ✅ Bisa (exception) |
+| http://example.com (production) | ❌ Ditolak |
+| https://example.com | ✅ Bisa |
 
 Cookie Secure tersimpan di localhost HTTP? **Ya**
 Mengapa bisa tersimpan? **Browser exception, karena localhost hanya digunakan untuk development.**
