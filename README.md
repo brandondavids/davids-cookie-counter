@@ -1,8 +1,8 @@
 # Cookie Counter w/ Security Attribute
 
 ## EKSPERIMEN 1: Session Cookie vs Persistent Cookie
-sessionTest: **[hilang]** session cookie (tanpa Max-Age) \
-persistentTest: **[ada]** Max-Age = 3600 (1 jam)
+sessionTest: **[hilang]** Session cookie (tanpa Max-Age) \
+persistentTest: **[ada]** Persistent Cookie: Max-Age = 3600 (1 jam)
 
 ## EKSPERIMEN 2: Path Restriction
 | Halaman | cookieRoot | cookieAdmin |
