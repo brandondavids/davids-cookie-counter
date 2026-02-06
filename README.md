@@ -1,10 +1,10 @@
 # Cookie Counter w/ Security Attribute
 
-## EKSPERIMEN 1: Session Cookie vs Persistent Cookie
+## EXPERIMENT 1: Session Cookie vs Persistent Cookie
 sessionTest: **[hilang]** Session Cookie (tanpa Max-Age) \
 persistentTest: **[ada]** Persistent Cookie: Max-Age = 3600 (1 jam)
 
-## EKSPERIMEN 2: Path Restriction
+## EXPERIMENT 2: Path Restriction
 | Halaman | cookieRoot | cookieAdmin |
 | ------- | ---------- | ----------- |
 | /index.html | ✓ |	✗ | 
@@ -17,7 +17,7 @@ Cookie dengan Path=/admin akan dikirim ke:
 - /profile ✗ 
 - / ✗
 
-## EKSPERIMEN 3: Secure Flag
+## EXPERIMENT 3: Secure Flag
 | URL | Secure Cookie |
 | --- | ------------- |
 | http://localhost / http://127.0.0.1 | ✅ Bisa (exception) |
